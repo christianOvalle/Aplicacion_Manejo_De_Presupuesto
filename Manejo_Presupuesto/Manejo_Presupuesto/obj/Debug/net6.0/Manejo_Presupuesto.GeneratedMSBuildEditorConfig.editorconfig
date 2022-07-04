@@ -15,8 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\crist\Documents\GitHub\Aplicacion_Manejo_De_Presupuesto\Manejo_Presupuesto\Manejo_Presupuesto
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Categorias/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Categorias/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Categorias/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Cuentas/Borrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc1xCb3JyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Cuentas/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Cuentas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhc1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Home/Index.cshtml]
@@ -53,6 +77,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/TiposCuentas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb3NDdWVudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/Transacciones/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY2Npb25lc1xDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/crist/Documents/GitHub/Aplicacion_Manejo_De_Presupuesto/Manejo_Presupuesto/Manejo_Presupuesto/Views/_ViewImports.cshtml]
