@@ -49,7 +49,7 @@ namespace Manejo_Presupuesto.Servicios
         {
             using var connection = new SqlConnection(connectionString);
             return await connection.QueryFirstOrDefaultAsync<Cuenta>(
-                @"select Cuentas.Id, Cuentas.Nombre, Balance, Descripcion, tc.Id
+                @"select Cuentas.Id, Cuentas.Nombre, Balance, Descripcion, TipoCuentaId
                   from Cuentas
                   inner join TiposCuentas tc
                   on tc.Id = Cuentas.TipoCuentaId

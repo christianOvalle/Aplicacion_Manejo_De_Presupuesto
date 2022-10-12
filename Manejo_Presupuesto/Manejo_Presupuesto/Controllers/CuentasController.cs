@@ -12,13 +12,18 @@ namespace Manejo_Presupuesto.Controllers
         private readonly IserviciosUsuarios serviciosUsuarios;
         private readonly IRepositorioCuentas repositorioCuentas;
         private readonly IMapper mapper;
+        private readonly IRepositorioTransacciones repositorioTransacciones;
+        private readonly IServicioReporte servicioReporte;
 
-        public CuentasController(IRepositorioTiposCuentas repositorioTiposCuentas, IserviciosUsuarios iserviciosUsuarios, IRepositorioCuentas repositorioCuentas, IMapper mapper)
+        public CuentasController(IRepositorioTiposCuentas repositorioTiposCuentas, IserviciosUsuarios iserviciosUsuarios, IRepositorioCuentas repositorioCuentas, IMapper mapper,
+            IRepositorioTransacciones repositorioTransacciones, IServicioReporte servicioReporte)
         {
             this.repositorioTiposCuentas = repositorioTiposCuentas;
             this.serviciosUsuarios = iserviciosUsuarios;
             this.repositorioCuentas = repositorioCuentas;
             this.mapper = mapper;
+            this.repositorioTransacciones = repositorioTransacciones;
+            this.servicioReporte = servicioReporte;
         }
 
         public async Task<IActionResult> Index()
@@ -33,6 +38,23 @@ namespace Manejo_Presupuesto.Controllers
                     TipoCuenta = grupo.Key,
                     Cuentas = grupo.AsEnumerable()
                 }).ToList();
+
+            return View(modelo);
+        }
+
+        public async Task<IActionResult> Detalle (int id, int mes, int año)
+        {
+            var usuarioId = serviciosUsuarios.ObtenerUsuarioId();
+            var cuenta = await repositorioCuentas.ObtenerPorId(id, usuarioId);
+
+            if(cuenta is null)
+            {
+                return RedirectToAction("NoEncontrado", "Home");
+            }
+
+            ViewBag.Cuenta = cuenta.Nombre;
+
+            var modelo = await servicioReporte.ObtenerReporteTransaccionesDetalladasPorCuenta(usuarioId, id, mes, año, ViewBag );
 
             return View(modelo);
         }
